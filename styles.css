@@ -1,0 +1,153 @@
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+:root {
+    box-sizing: border-box;
+    --violet: hsl(257, 40%, 49%);
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-image: url('./images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--violet);
+    padding: 0 40px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.col {
+    text-align: center;
+    padding-top: 1em;
+}
+
+.social {
+    align-items: center;
+}
+
+
+.img-logo {
+    width: 125px;
+    padding: 30px 0;
+}
+
+.img-mockup {
+    width: 100%;
+    padding: 30px 0;
+}
+
+.col p {
+    padding-bottom: 1em;
+}
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: var(--violet);
+    font-size: .8rem;
+    font-weight: 400;
+    background-color: #fff;
+    padding: .8em 6em;
+    border-radius: 100px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.social {
+    padding-top: 4em;
+}
+
+i.fab {
+    font-size: .8rem;
+    width: 2.1em;
+    text-align: center;
+    line-height: 2.1em;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 100px;
+}
+
+@media (min-width: 768px) {
+    body {
+        background-image: url('./images/bg-desktop.svg');
+        background-attachment: fixed;
+        background-size: auto 100%;
+        font-size: 1rem;
+        padding: 0 4%;
+    }
+
+    .flex {
+        flex-direction: row;
+    }
+
+    .col {
+        padding-left: 2em;
+        width: 50%;
+        text-align: start;
+    }
+
+    .img-logo {
+        width: 160px;
+        padding: 40px 0;
+    }
+
+    .main {
+        justify-content: space-between;
+    }
+    .main h1 {
+        font-size: 2rem;
+    }
+    .main .btn {
+        font-size: 1rem;
+        padding: 0.8em 3.5em;
+    }
+
+    .img-mockup {
+        align-self: flex-start;
+        width: 55%;
+    }
+
+    .social {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1100px) {
+    body {
+        font-size: 1.225rem;
+    }
+
+    .img-logo {
+        width: 200px;
+        padding: 50px 0;
+    }
+
+    .main h1 {
+        font-size: 2.7rem;
+    }
+
+    .social {
+        justify-content: flex-end;
+        padding-top: 3em;
+    }
+}
+
+@media (min-width: 1400px) {
+    .social {
+        padding-top: 0;
+    }
+}
