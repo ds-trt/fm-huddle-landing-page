@@ -77,6 +77,14 @@ i.fab {
     border-radius: 100px;
 }
 
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color:#F3B6FF; 
+}
+
 @media (min-width: 768px) {
     body {
         background-image: url('./images/bg-desktop.svg');
@@ -103,7 +111,7 @@ i.fab {
         align-self: flex-start;
         width: 55%;
     }
-    
+
     .main__text {
         padding-left: 2em;
         width: 50%;
