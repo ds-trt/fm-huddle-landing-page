@@ -63,6 +63,9 @@ h1, h2, h3 {
     border-radius: 100px;
     box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
 }
+.btn:hover, .btn:focus {
+    opacity: 0.75;
+}
 
 .social {
     align-items: center;
@@ -79,13 +82,20 @@ i.fab {
     border-radius: 100px;
     margin: 0 0.4em;
 }
+i.fab:hover, i.fab:focus {
+    opacity: 0.75;
+}
 
 .attribution { 
     font-size: 11px; 
     text-align: center; 
 }
 .attribution a { 
-    color:#F3B6FF; 
+    color:#F3B6FF;
+    text-decoration: none;
+}
+.attribution a:hover, .attribution a:focus {
+    text-decoration: underline;
 }
 
 @media (min-width: 768px) {
