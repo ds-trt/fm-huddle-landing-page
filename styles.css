@@ -39,7 +39,7 @@ h1, h2, h3 {
 
 .img-mockup {
     width: 100%;
-    padding: 30px 0;
+    padding: 1em 0;
 }
 
 .main__text {
@@ -47,7 +47,7 @@ h1, h2, h3 {
     padding-top: 1em;
 }
 .main__text p {
-    padding-bottom: 1em;
+    padding-bottom: 1.2em;
 }
 
 .btn {
@@ -57,9 +57,9 @@ h1, h2, h3 {
     font-size: .8rem;
     font-weight: 400;
     background-color: #fff;
-    padding: .8em 6em;
+    padding: .9em 6em;
     border-radius: 100px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
 }
 
 .social {
@@ -68,13 +68,14 @@ h1, h2, h3 {
 }
 
 i.fab {
-    font-size: .8rem;
-    width: 2.1em;
+    font-size: 1.125rem;
+    width: 2em;
     text-align: center;
-    line-height: 2.1em;
+    line-height: 2em;
     color: #fff;
     border: 1px solid #fff;
     border-radius: 100px;
+    margin-right: 0.5em;
 }
 
 .attribution { 
@@ -91,7 +92,7 @@ i.fab {
         background-attachment: fixed;
         background-size: auto 100%;
         font-size: 1rem;
-        padding: 0 4%;
+        padding: 0 2rem;
     }
 
     .flex {
@@ -113,8 +114,8 @@ i.fab {
     }
 
     .main__text {
-        padding-left: 2em;
-        width: 50%;
+        /* padding-left: 2em; */
+        width: 40%;
         text-align: start;
     }
     .main h1 {
@@ -122,7 +123,7 @@ i.fab {
     }
     .main .btn {
         font-size: 1rem;
-        padding: 0.8em 3.5em;
+        padding: 1em 4em;
     }
 
     .social {
@@ -132,26 +133,26 @@ i.fab {
 
 @media (min-width: 1100px) {
     body {
-        font-size: 1.225rem;
+        font-size: 1.125rem;
     }
 
     .img-logo {
         width: 200px;
-        padding: 50px 0;
+        padding: 3.3em 0;
     }
 
     .main h1 {
-        font-size: 2.7rem;
+        font-size: 2.25rem;
     }
 
     .social {
         justify-content: flex-end;
-        padding-top: 3em;
+        padding-top: 5em;
     }
 }
 
 @media (min-width: 1400px) {
     .social {
-        padding-top: 0;
+        padding-top: 0.5em;
     }
 }
