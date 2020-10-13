@@ -25,7 +25,7 @@ h1, h2, h3 {
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 10%;
 }
 .flex {
     display: flex;
@@ -44,10 +44,12 @@ h1, h2, h3 {
 
 .main__text {
     text-align: center;
-    padding-top: 1em;
+    padding-top: 2.35em;
 }
 .main__text p {
+    line-height: 1.5em;
     padding-bottom: 1.2em;
+    padding-right: 0.5em;
 }
 
 .btn {
@@ -55,7 +57,7 @@ h1, h2, h3 {
     text-decoration: none;
     color: var(--violet);
     font-size: .8rem;
-    font-weight: 400;
+    font-weight: 00;
     background-color: #fff;
     padding: .9em 6em;
     border-radius: 100px;
@@ -69,13 +71,13 @@ h1, h2, h3 {
 
 i.fab {
     font-size: 1.125rem;
-    width: 2em;
+    width: 2.1em;
     text-align: center;
-    line-height: 2em;
+    line-height: 2.1em;
     color: #fff;
     border: 1px solid #fff;
     border-radius: 100px;
-    margin-right: 0.5em;
+    margin: 0 0.4em;
 }
 
 .attribution { 
@@ -87,14 +89,23 @@ i.fab {
 }
 
 @media (min-width: 768px) {
+    .container {
+        padding: 0 20%;
+    }
+}
+
+@media (min-width: 900px) {
     body {
         background-image: url('./images/bg-desktop.svg');
         background-attachment: fixed;
         background-size: auto 100%;
         font-size: 1rem;
-        padding: 0 2rem;
     }
 
+    .container {
+        padding: 0 4.5rem;
+    }
+    
     .flex {
         flex-direction: row;
     }
@@ -114,16 +125,20 @@ i.fab {
     }
 
     .main__text {
-        /* padding-left: 2em; */
-        width: 40%;
+        width: 41%;
         text-align: start;
     }
     .main h1 {
         font-size: 2rem;
     }
     .main .btn {
-        font-size: 1rem;
-        padding: 1em 4em;
+        /* font-size: 1rem;
+        padding: 1.1em 4.2em; */
+        /* font-size: 1.2rem;
+        padding: .75em 3.2em; */
+        font-size: 1.1rem;
+        padding: .86em 3.5em;
+        font-weight: 700;
     }
 
     .social {
@@ -133,16 +148,17 @@ i.fab {
 
 @media (min-width: 1100px) {
     body {
-        font-size: 1.125rem;
+        font-size: 1.12rem;
     }
 
     .img-logo {
-        width: 200px;
-        padding: 3.3em 0;
+        width: 212px;
+        padding: 3.5rem 0;
     }
 
     .main h1 {
-        font-size: 2.25rem;
+        font-size: 2.42rem;
+        margin-bottom: 0.6em;
     }
 
     .social {
@@ -153,6 +169,6 @@ i.fab {
 
 @media (min-width: 1400px) {
     .social {
-        padding-top: 0.5em;
+        padding-top: 0.32em;
     }
 }
