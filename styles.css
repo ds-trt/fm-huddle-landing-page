@@ -69,7 +69,7 @@ h1, h2, h3 {
     border-radius: 100px;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
-.btn:hover, .btn:focus {
+.btn:focus {
     transform: translateY(-0.25rem);
     box-shadow: 0 1em 1.5em rgba(0, 0, 0, 0.2);
 }
@@ -92,7 +92,7 @@ i.fab {
     margin: 0 0.5em;
     transition: background-color 0.3s;
 }
-i.fab:hover, i.fab:focus {
+i.fab:focus {
     background-color: var(--pink);
 }
 
@@ -107,7 +107,7 @@ i.fab:hover, i.fab:focus {
     transition: transform 0.2s, border-color 0.2s;
     display: inline-block;
 }
-.attribution a:hover, .attribution a:focus {
+.attribution a:focus {
     transform: translateY(-0.25rem);
     border-color: #F3B6FF;
 }
@@ -208,5 +208,21 @@ i.fab:hover, i.fab:focus {
         width: 2.15em;
         line-height: 2.15em;
         margin: 0 0.47em;
+    }
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .btn:hover {
+        transform: translateY(-0.25rem);
+        box-shadow: 0 1em 1.5em rgba(0, 0, 0, 0.2);
+    }
+
+    i.fab:hover {
+        background-color: var(--pink);
+    }
+
+    .attribution a:hover {
+        transform: translateY(-0.25rem);
+        border-color: #F3B6FF;
     }
 }
